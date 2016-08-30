@@ -35,7 +35,9 @@ var app = {
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
         console.log('test')
-        // $('#login').click(function?)
+        $('#login').click(function(){
+            $('#login').addClass('hide');
+        });
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
